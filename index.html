@@ -125,9 +125,9 @@
                         Create project &amp; test
                     </li>
                     <p>When your development environment is ready, create a Kotlin project. Add the following piece of code in the “project_name.kt” file.</p>
-                    <code>fun main(args: Array<String>) {</code><br>
-                    <code>&nbsp;&nbsp;&nbsp;&nbsp;println("Hello, World!")</code><br>
-                    <code>}</code><br>
+                    <code>fun main(args: Array<String>) {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;println("Hello, World!")<br>
+                    }</code><br>
                     <p>Run it as a Kotlin application and see the output in the console as shown in the following screenshot.</p>
                     <code>Hello, World!</code><br>
                 </ol>
@@ -149,12 +149,6 @@
                 <p>In this chapter, we will learn about the basic data types available in Kotlin programming language.</p>
                 <ul>
                     <li>Numbers</li>
-                    <p>Type : Size</p>
-                        <ul>                            
-                            <li>Double : 64</li>
-                            <li>Float : 32</li>
-                            <li>Etc.</li>
-                        </ul>
                     <li>Characters</li>
                     <li>Boolean</li>
                     <li>Strings</li>
@@ -178,32 +172,32 @@
                 <br>
                 <p>We will discuss in detail about <strong>For loop</strong>.</p>
                 <p>The implementation and use of For loop is conceptually similar to Java for loop. The following example shows how we can use the same in real-life examples.</p>
-                <code>fun main(args: Array<String>) {</code><br>
-                <code>&nbsp;&nbsp;&nbsp;&nbsp;val items = listOf(1, 2, 3, 4)</code><br>
-                <code>&nbsp;&nbsp;&nbsp;&nbsp;for (i in items) println("values of the array"+i)</code><br>
-                <code>}</code><br>
+                <code>fun main(args: Array<String>) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;val items = listOf(1, 2, 3, 4)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;for (i in items) println("values of the array"+i)<br>
+                }</code><br>
 
                 <p>In the above piece of code, we have declared one list named as “items” and using for loop we are iterating through that defined list and printing its value in the browser. Following is the output.</p>
-                <code>values of the array1</code><br>
-                <code>values of the array1</code><br>
-                <code>values of the array1</code><br>
-                <code>values of the array1</code><br>
+                <code>values of the array1<br>
+                values of the array2<br>
+                values of the array3<br>
+                >values of the array4</code><br>
 
                 <p>Following is another example of code, where we are using some library function to make our development work easier than ever before.</p>
 
-                <code>fun main(args: Array<String>) {</code><br>
-                <code>&nbsp;&nbsp;&nbsp;&nbsp;val items = listOf(1, 22, 83, 4)</code><br>
-                <code></code><br>
-                <code>&nbsp;&nbsp;&nbsp;&nbsp;for ((index, value) in items.withIndex()) {</code><br>
-                <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;println("the element at $index is $value")</code><br>
-                <code>&nbsp;&nbsp;&nbsp;&nbsp;}</code><br>
-                <code>}</code><br>
+                <code>fun main(args: Array<String>) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;val items = listOf(1, 22, 83, 4)<br>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;for ((index, value) in items.withIndex()) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;println("the element at $index is $value")<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                }</code><br>
 
                 <p>Once we compile and execute the above piece of code in our coding ground, it will yield the following output in the browser.</p>
-                <code>the element at 0 is 1</code><br>
-                <code>the element at 1 is 22</code><br>
-                <code>the element at 2 is 83</code><br>
-                <code>the element at 3 is 4</code><br>
+                <code>the element at 0 is 1<br>
+                the element at 1 is 22<br>
+                the element at 2 is 83<br>
+                the element at 3 is 4</code><br>
             </article>
         </section>
 
@@ -213,13 +207,13 @@
                 <p>Kotlin is a statically typed language, hence, functions play a great role in it. We are pretty familiar with function, as we are using function throughout the examples. Function is declared with the keyword “fun”. Like any other OOP, it also needs a return type and an option argument list.</p>
                 <p>In the following example, we are defining a function called MyFunction and from the main function we are calling this function and passing some argument.</p>
 
-                <code>fun main(args: Array<String>) {</code><br>
-                <code>&nbsp;&nbsp;&nbsp;&nbsp;println(MyFunction("This Tutorial"))</code><br>
-                <code>}</code><br>
-                <code>fun MyFunction(x: String): String {</code><br>
-                <code>&nbsp;&nbsp;&nbsp;&nbsp;var c:String  = "Hey!! Welcome To "</code><br>
-                <code>&nbsp;&nbsp;&nbsp;&nbsp;return (c+x)</code><br>
-                <code>}</code><br>
+                <code>fun main(args: Array<String>) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;println(MyFunction("This Tutorial"))<br>
+                }br>
+                fun MyFunction(x: String): String {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;var c:String  = "Hey!! Welcome To "<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;return (c+x)<br>
+                }</code><br>
 
                 <p>The above piece of code will yield the following output in the browser.</p>
                 <code>Hey!! Welcome To This Tutorial</code><br>
